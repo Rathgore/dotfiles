@@ -22,3 +22,6 @@
 [submodule "vim/bundle/align"]
 	path = vim/bundle/align
 	url = https://github.com/tsaleh/vim-align.git
+[submodule "vim/bundle/indent-object"]
+	path = vim/bundle/indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
