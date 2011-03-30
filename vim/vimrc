@@ -108,7 +108,6 @@ vmap <C-Down> ]egv
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
 
 " gist-vim defaults
 if has("mac")
@@ -147,6 +146,8 @@ com Rws %s/\s\+$//
 
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
+
+let g:syntastic_enable_signs=1
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
