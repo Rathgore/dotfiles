@@ -43,9 +43,9 @@ export HISTFILE="$HOME/.history"
 export HISTSIZE=200
 
 if [[ `uname` == "Darwin" ]] then
-    export COMPUTERNAME=`scutil --get ComputerName`
+    export COMPUTERNAME="`scutil --get ComputerName`"
 else
-    export COMPUTERNAME=`hostname -s`
+    export COMPUTERNAME="`hostname -s`"
 fi
 
 if [[ $USER != "root" ]]; then
