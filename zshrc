@@ -70,10 +70,6 @@ alias o='popd'
 PROMPT="%B%n%b@%B%l%b.%B${(L)COMPUTERNAME}%b/%B%h%b%# "
 RPROMPT=' %B%~%b'
 
-# path
-export PATH=.:~/Scripts:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/opt/local/lib/postgresql82/bin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
-
 # load local settings
 if [[ -e "$HOME/.zshrc.local" ]] then
     source $HOME/.zshrc.local
