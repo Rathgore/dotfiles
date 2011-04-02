@@ -50,3 +50,6 @@
 	path = vim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
     ignore = untracked
+[submodule "vim/bundle/rooter"]
+	path = vim/bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
