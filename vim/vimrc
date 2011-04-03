@@ -119,7 +119,7 @@ runtime! macros/matchit.vim
 set gcr=n:blinkon0
 
 " Remove extraneous whitespace
-com Rws %s/\s\+$//
+com Rws %s/\s\+$//e
 
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
