@@ -121,6 +121,9 @@ set gcr=n:blinkon0
 " Remove extraneous whitespace
 com Rws %s/\s\+$//e
 
+" Enable undo file
+set undofile
+
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
 
