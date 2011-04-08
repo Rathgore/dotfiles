@@ -127,9 +127,6 @@ set undofile
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
 
-" Disable Netrw cursor line highlighting
-let g:netrw_cursorline=0
-
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local

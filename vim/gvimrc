@@ -95,6 +95,11 @@ function s:DefineCommand(name, destination)
     call s:CommandCabbr(a:name, a:destination)
 endfunction
 
+" Cursor line
+hi CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=#293f5f guifg=NONE
+nnoremap <Leader>c :set cursorline!<CR>
+set cursorline
+
 " Include user's local vim config
 if filereadable(expand("~/.gvimrc.local"))
     source ~/.gvimrc.local
