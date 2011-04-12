@@ -122,7 +122,9 @@ set gcr=n:blinkon0
 com Rws %s/\s\+$//e
 
 " Enable undo file
-set undofile
+if has('persistent_undo')
+    set undofile
+endif
 
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
