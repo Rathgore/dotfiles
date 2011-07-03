@@ -100,7 +100,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color dusk
+color xoria256
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -133,3 +133,5 @@ nnoremap U :GundoToggle<CR>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+set t_Co=256
