@@ -135,3 +135,5 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 set t_Co=256
+
+autocmd BufRead,BufNewFile *.rbbas e ++ff=mac|set ft=basic
