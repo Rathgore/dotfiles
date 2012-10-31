@@ -25,7 +25,7 @@ set smartcase
 
 " Tab completion
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.pyc,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
+set wildignore+=*.o,*.obj,.git,*.pyc,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*,*.un~
 
 " Status bar
 set laststatus=2
