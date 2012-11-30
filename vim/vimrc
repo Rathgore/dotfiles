@@ -129,6 +129,10 @@ endif
 " Map U to Gundo
 nnoremap U :GundoToggle<CR>
 
+" Insert newlines in command mode
+map <S-Enter> O<Esc>
+map <CR> o<Esc>
+
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
