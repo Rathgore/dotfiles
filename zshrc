@@ -28,6 +28,7 @@ zstyle ':completion:*:manuals' separate-sections true
 zstyle ':completion:*:manuals.(^1*)' insert-sections true
 zstyle ':completion:*' menu select
 zstyle ':completion:*' verbose yes
+zstyle ':completion:*' use-compctl false
 
 # set vi line editing
 bindkey -v
