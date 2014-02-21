@@ -1,4 +1,10 @@
-call pathogen#incubate()
+let g:pathogen_disabled = []
+
+if !has("gui_macvim")
+    call add(g:pathogen_disabled, 'command-t')
+endif
+
+execute pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible

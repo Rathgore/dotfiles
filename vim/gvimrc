@@ -67,7 +67,11 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color dusk
+"color dusk
+color xoria256
+
+" Set font
+set guifont=Menlo:h12
 
 " ConqueTerm wrapper
 function StartTerm()
