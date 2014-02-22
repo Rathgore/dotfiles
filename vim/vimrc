@@ -1,11 +1,27 @@
-let g:pathogen_disabled = []
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-if !has("gui_macvim")
-    call add(g:pathogen_disabled, 'command-t')
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'msanders/snipmate.vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-align'
+Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'mattn/emmet-vim'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'airblade/vim-gitgutter'
+
+if has("gui_macvim")
+    Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+    Bundle 'wincent/Command-T'
 endif
 
-execute pathogen#infect()
-call pathogen#helptags()
+let g:ycm_autoclose_preview_window_after_completion=1
 
 set nocompatible
 

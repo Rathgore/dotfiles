@@ -71,7 +71,8 @@ set guioptions-=T
 color xoria256
 
 " Set font
-set guifont=Menlo:h12
+"set guifont=Menlo:h12
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12
 
 " ConqueTerm wrapper
 function StartTerm()
